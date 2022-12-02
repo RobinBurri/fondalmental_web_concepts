@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: f1faee;
+}
+
+button {
+    width: 15rem;
+    margin-top: 2rem;
+    padding: 0.6rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3c6e71;
+    color: #eee;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-container {
+    display: flex;
+    max-width: 80%;
+    margin: 1rem auto;
+    overflow: hidden;
+    min-height: 95vh;
+}
+
+.left-container {
+    position: relative;
+    background-image: url('./leafs_bg.jpg');
+    width: 40%;
+}
+
+.left-container img {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-container h1 {
+    font-size: 65px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    color: #fff;
+}
+
+.left-container p {
+    position: relative;
+    top: 95%;
+    text-align: center;
+    color: #fff;
+}
+
+.left-container a {
+    color: #fff;
+}
+
+.right-contaier {
+    display: grid;
+    grid-template-rows: 35% 45% 20%;
+    min-height: 100%;
+    width: 60%;
+    background-color: #d9d9d9;
+}
+
+.right-contaier .quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-contaier .quote .text-wrapper {
+    max-width: 60%;
+}
+.right-contaier .quote .text-wrapper h4 {
+    font-size: 18px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    background-color: #ffffff;
+    box-shadow: 10px 5px 10px rgba(31, 29, 29, 0.3);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    column-gap: 5px;
+}
+
+.label-input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-input-wrapper input {
+    padding: 5px;
+}
+
+.section-footer {
+    padding: 1rem 3rem;
+    height: 100%;
+    text-align: center;
+}
+
+.section-footer a {
+    color: #606c38;
+}
+
+.err_msg {
+    font-size: 8px;
+    color: red;
+}
+
+@media screen and (max-width: 992px) {
+    .left-container {
+        width: 0;
+        visibility: hidden;
+    }
+    .right-contaier {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .form-wrapper {
+        text-align: center;
+        /* margin: 0 auto; */
+    }
+    form {
+        grid-template-columns: 1fr;
+    }
+    .right-contaier {
+        grid-template-rows: 0% 80% 20%;
+    }
+    .right-contaier .quote {
+        visibility: hidden;
+    }
+}
