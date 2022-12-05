@@ -1,0 +1,12 @@
+.app {
+    width: 80%;
+    min-height: 80vh;
+    padding: 1rem;
+    background: url('/forest.jpg');
+    background-size: cover;
+    box-shadow: 10px 5px 10px rgba(31, 29, 29, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem auto;
+}

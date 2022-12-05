@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Cookie|Raleway:300,700,400);
+
+.registration_form {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    height: 100%;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0 0 0.5em 0;
+    text-align: center;
+    font-family: 'Cookie', cursive;
+    font-weight: 100;
+}
+
+.registration_form label {
+    border-bottom: 1px solid #333;
+    display: block;
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+}
+
+.registration_form label input {
+    background: none;
+    border: none;
+    line-height: 1em;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 0.125em 0.25em;
+    width: 100%;
+}
+.registration_form label input:focus {
+    outline: none;
+}
+
+.registration_form label span.label_text {
+    display: block;
+    font-size: 0.5em;
+    font-weight: bold;
+    padding-left: 0.5em;
+    text-transform: uppercase;
+}
+
+.registration_form label.checkbox {
+    border-bottom: 0;
+
+    position: relative;
+}
+.registration_form label.checkbox span {
+    font-size: 0.5em;
+}
+
+.registration_form label.checkbox input {
+    position: relative;
+    top: 2px;
+    left: -4px;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+}
+
+/* .registration_form label.invalid {
+    border-color: #c0392b !important;
+}
+.registration_form label.invalid span.label-text {
+    color: #c0392b;
+} */
+
+.registration_form button {
+    background-color: #ffd7ba;
+    border: 1px solid #333;
+    border-radius: 5px;
+    line-height: 1em;
+    padding: 0.5rem 1rem;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.registration_form button:hover,
+.registration_form button:focus,
+.registration_form button:active,
+.registration_form button.loading {
+    background: #333;
+    color: #fff;
+    outline: none;
+}
+.registration_form button.success {
+    background: #27ae60;
+    border-color: #27ae60;
+    color: #fff;
+}
+.text_center {
+    margin: 0 auto;
+}
